@@ -9,7 +9,7 @@ require('dotenv').config();
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-app.use(cors({ origin: 'https://taskmanagerbackend-production-e8ed.up.railway.app' }));
+app.use(cors({ origin: ['https://taskmanagerbackend-production-e8ed.up.railway.app', 'https://yktaskmanager.netlify.app'] }));
 app.use(express.json());
 
 const swaggerOptions = {
